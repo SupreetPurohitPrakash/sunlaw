@@ -5,8 +5,8 @@
   left: 0;
   right: 0;
   color: $color-black;
+  background-color: #fff;
   padding: 50px 0 20px;
-  background-color: transparent;
   transition: all 0.5s ease;
 
   &-main {}
@@ -68,19 +68,23 @@
     }
   }
 
-  &.headerfixit {
-    padding: 10px 0;
-    background-color: #fff;
-    box-shadow: 0 0 3px rgba(#000, .15);
-  }
-
   @media (min-width: 992px) {}
 
 }
 
+.homepage .header {
+  background-color: transparent;
+}
+
+.header.headerfixit {
+  padding: 10px 0;
+  background-color: #fff;
+  box-shadow: 0 0 3px rgba(#000, .15);
+}
+
 .overlay-nav {
   z-index: 1;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -144,6 +148,7 @@
 
 .logowrap {
   width: 328px;
+  max-width: 100%;
 
   img {
     width: 100%;

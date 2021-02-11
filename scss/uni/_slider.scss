@@ -10,7 +10,6 @@
 
     .carousel-item {
         height: 100vh;
-        min-height: 900px;
 
         &-sm {
             height: 480px;
@@ -31,15 +30,15 @@
         .imgtobg-o,
         .imgtobg-o-sm {
             position: relative;
-            animation: carouimgzoom 60s infinite;
+            // animation: carouimgzoom 60s infinite;
         }
 
         img {
-            min-height: 100%;
+            min-height: calc(100% + 200px);
         }
 
         @media (max-width: 1200px) {
-            height: 700px;
+            min-height: 900px;
         }
 
         @media (max-width: 767px) {
@@ -306,13 +305,14 @@
     @include respond(tabland-min) {
         &-overlay {
             padding-top: 15rem;
+            max-width: 1200px;
 
             &-inner {
 
                 h2,
                 h3,
                 h4 {
-                    font-size: 107px;
+                    font-size: 80px;
                     line-height: 110px;
                 }
 

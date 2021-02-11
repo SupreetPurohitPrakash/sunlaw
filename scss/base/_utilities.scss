@@ -49,6 +49,14 @@
     background-color: $color-gray !important;
   }
 
+  &-gray-light {
+    background-color: $color-gray-light !important;
+  }
+
+  &-gray-dark {
+    background-color: $color-gray-dark !important;
+  }
+
   &-black {
     background-color: $color-black !important;
   }
@@ -76,10 +84,6 @@
   font-size: 40px;
   font-weight: 300;
   line-height: 52px;
-
-  .font-weight-bold {
-    color: $color-main;
-  }
 
   &-sub {
     font-family: $font-title;
@@ -116,8 +120,8 @@
 
 .title-bar {
   display: block;
-  width: 30px;
-  height: 2px;
+  width: 42px;
+  height: 3px;
   background-color: #fff;
   margin: 29px 0;
 }

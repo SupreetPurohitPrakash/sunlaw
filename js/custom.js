@@ -106,6 +106,16 @@ jQuery(document).ready(function ($) {
     scrollAddClass(".header", "headerfixit")
   }
 
+  // sticky init
+  $(".sticky-div").stick_in_parent({
+    // offset_top: 100,
+    // offset_bottom: 100
+  });
+  $(".serv-side").stick_in_parent({
+    offset_top: 120,
+    // offset_bottom: 100
+  });
+
   //if clicked outside container remove said class
   containerOutClock('.has-submenu', 'open');
 
@@ -197,12 +207,7 @@ jQuery(document).ready(function ($) {
     nextArrow: '<button class="slick-next slick-arrow" aria-label="Next" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="20.965" height="7.969" viewBox="0 0 20.965 7.969"> <g id="next_hover_" data-name="next ( hover )" transform="translate(-1820.039 -616.01)"> <path id="next" d="M1836.219,623.73a.841.841,0,0,1,0-1.219l1.723-1.655h-16.025c-1.035,0-1.877-.387-1.877-.859s.842-.866,1.877-.866h16.024l-1.723-1.653a.84.84,0,0,1-.263-.61.822.822,0,0,1,.263-.6.917.917,0,0,1,1.268,0l3.254,3.121a.837.837,0,0,1,.263.608v0s0,.008,0,.012a.853.853,0,0,1-.263.6l-3.254,3.124a.932.932,0,0,1-1.268,0Z" fill="#200d09"/> </g> </svg></button>',
   });
 
-  $('.expertise-slider').on('init', function (event, slick) {
-    // console.log('it init');
-    // $('.expertise-slider').each(function () {
-    //   $(this).css('minHeight', $(this).outerHeight())
-    // })
-  });
+
 
 
   //copy img to background

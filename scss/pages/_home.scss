@@ -103,6 +103,7 @@
         &-img {
             position: relative;
             height: 407px;
+            text-align: center;
             overflow: hidden;
             transition: all .3s ease-out;
 
@@ -125,7 +126,6 @@
             -webkit-text-stroke: 2px #fff;
             transition: all .3s ease-out;
             letter-spacing: -30px;
-            text-transform: uppercase;
         }
 
         &-cont {
