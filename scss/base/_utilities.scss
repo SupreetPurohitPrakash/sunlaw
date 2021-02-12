@@ -258,6 +258,10 @@
     max-width: 900px;
   }
 
+  &--950 {
+    max-width: 950px;
+  }
+
   &--1000 {
     max-width: 1000px;
   }
@@ -462,6 +466,33 @@
 
     span {
       margin-right: 8px;
+    }
+  }
+}
+
+.tags-box {
+  padding: 45px;
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid $color-black-alt;
+
+  .tags {
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+
+    a {
+      font-size: 20px;
+      font-weight: 500;
+      text-decoration: underline;
+
+      &:hover {
+        color: $color-sub;
+      }
+    }
+
+    &:nth-child(-n+4) {
+      margin-bottom: 50px;
     }
   }
 }

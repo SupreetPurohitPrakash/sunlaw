@@ -1,4 +1,28 @@
 .serv {
+    &-shape {
+
+        &-1,
+        &-2 {
+            z-index: -1;
+            position: absolute;
+            top: 50%;
+        }
+
+        &-1 {
+            left: 0;
+            transform: translate(-50%, -50%);
+            width: 39%;
+        }
+
+        &-2 {
+            top: 65%;
+            left: auto;
+            right: 0;
+            transform: translate(50%, -50%);
+            width: 13%;
+        }
+    }
+
     [class^="col-"] {
         @media (min-width: 1201px) {
             &:first-child {

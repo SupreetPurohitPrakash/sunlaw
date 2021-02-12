@@ -1,0 +1,40 @@
+.section {
+    &-contact {
+        @media (min-width: 1201px) {
+            padding: 194px 0 175px;
+        }
+    }
+}
+
+.contact {
+    [class^="col-"] {
+        @media (max-width: 1200px) {
+            margin-bottom: 15px;
+        }
+    }
+
+    &-card {
+        display: flex;
+        align-items: center;
+
+        &-icon {
+            flex: 0 0 114px;
+            height: 114px;
+            line-height: 114px;
+            margin-right: 18px;
+            border-radius: 50%;
+            color: #fff;
+            background-color: $color-main;
+            text-align: center;
+
+            img {}
+        }
+
+        p {
+            font-size: 17px;
+            line-height: 25px;
+
+            @media (max-width: 1600px) {}
+        }
+    }
+}
