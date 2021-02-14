@@ -168,13 +168,17 @@ i.fa-phone {
     margin-bottom: 4rem;
   }
 
-  @include respond(tabland) {
-    padding: 4rem 0;
+  @media (max-width: 991px) {
+    padding: 60px 0;
 
     &-head {
-      margin-bottom: 2rem;
+      margin-bottom: 20px;
     }
   }
+}
+
+.overflow-visible {
+  overflow: visible !important;
 }
 
 .post {

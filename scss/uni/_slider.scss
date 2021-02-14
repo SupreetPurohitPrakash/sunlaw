@@ -37,12 +37,16 @@
             min-height: calc(100% + 200px);
         }
 
-        @media (max-width: 1200px) {
+        @media (min-width: 1200px) {
             min-height: 900px;
         }
 
-        @media (max-width: 767px) {
-            height: 450px;
+        @media (max-width: 991px) {
+            height: 650px;
+        }
+
+        @media (max-width: 567px) {
+            height: 520px;
         }
     }
 
@@ -74,14 +78,20 @@
 
 }
 
+#heroVideo {
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include imgfit;
+}
+
 .carousel {
     &-overlay {
         position: relative;
-        // max-width: 80rem;
         width: 100%;
 
         &-wrapper {
-            // color: #fff;
             z-index: 3;
             position: absolute;
             top: 0;
@@ -106,6 +116,10 @@
             position: absolute;
             left: 50%;
             transform: translateX(-50%);
+
+            @media (max-width: 567px) {
+                bottom: 5%;
+            }
         }
 
         &-wrapper.text-right & {}
@@ -124,7 +138,6 @@
 
         &-inner {
             padding: 3rem;
-            // @include unselect;
 
             >* {
                 overflow: hidden;
@@ -167,8 +180,6 @@
         &-title {
             position: relative;
             margin-bottom: 3rem;
-
-
         }
     }
 
@@ -180,8 +191,6 @@
     .link-box-alt,
     .link-box-white,
     .link-box-white-alt {
-        // width: 332px;
-        // display: block;
         padding: 10px 20px;
         margin-top: 40px;
     }
@@ -196,35 +205,6 @@
         font-weight: 400;
         line-height: 84px;
 
-    }
-
-    p {}
-
-    &-sidebar {
-        width: 951px;
-        position: absolute;
-        bottom: 100%;
-        right: 0;
-        transform: rotate(-90deg);
-        transform-origin: 100% 100%;
-        text-align: center;
-        background-color: #fff;
-
-        a {
-            display: block;
-            padding: 12px;
-        }
-
-        img {
-            margin-left: 56px;
-        }
-
-        @media (max-width: 567px) {
-            bottom: 0;
-            width: 100%;
-            transform: none;
-            border-bottom: 1px solid rgba(#000, .05);
-        }
     }
 
     &-nav {
@@ -348,11 +328,12 @@
 
             h2,
             h3 {
-                font-size: 3.2rem;
+                font-size: 40px;
+                line-height: 50px;
             }
 
             p {
-                font-size: 1.7rem;
+                font-size: 17px;
             }
         }
     }
@@ -379,7 +360,7 @@
 
                 h2,
                 h3 {
-                    font-size: 25px;
+                    font-size: 36px;
                     margin-bottom: .5rem;
                     line-height: normal;
                 }
@@ -390,8 +371,8 @@
                 }
 
                 a {
-                    font-size: 1.35rem;
-                    padding: .75rem 1.5rem;
+                    font-size: 15px;
+                    padding: 8px 16px;
                 }
             }
 

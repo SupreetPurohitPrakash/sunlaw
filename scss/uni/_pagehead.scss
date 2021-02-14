@@ -5,6 +5,10 @@
   height: 588px;
   text-align: center;
 
+  @media (max-width: 991px) {
+    height: 400px;
+  }
+
   &::after {
     z-index: 1;
     content: "";
@@ -21,11 +25,20 @@
     left: 50%;
     transform: translateX(-50%);
 
+    @media (max-width: 991px) {
+      bottom: 5%;
+    }
+
     .heading {
       color: #fff;
       font-size: 50px;
       line-height: 50px;
       @include unselect;
+
+      @media (max-width: 991px) {
+        font-size: 36px;
+        line-height: 45px;
+      }
 
       strong {
         display: block;

@@ -84,6 +84,10 @@
               <div class="carousel-img-parallax parallax-window h-100" data-parallax="scroll"
                 data-image-src="./images/hero-img.jpg">
               </div>
+              <video id="heroVideo" class="carousel-video d-none" mute loop preload="auto">
+                <source src="vids/vid.mp4" type="video/mp4" />
+                <source src="vids/vid.webm" type="video/webm" />
+              </video>
               <div class="carousel-overlay-wrapper text-center">
                 <div class="container">
                   <div class="carousel-overlay">
@@ -200,7 +204,7 @@
         </div>
       </section>
 
-      <section class="section section-story background-gray">
+      <section class="section section-story background-gray overflow-visible">
         <div class="container">
           <div class="story-shapes">
             <img src="./images/story-shape-1.svg" alt="" class="story-shape-1">
@@ -208,16 +212,18 @@
           </div>
           <div class="story">
             <div class="row align-items-center">
-              <div class="col-lg-6 pr-lg-5">
+              <div class="col-xl-6 pr-lg-5">
                 <div class="story-img">
-                  <img src="./images/story-img.png" alt="" class="img-fluid">
+                  <div class="story-mask-img">
+                    <img src="./images/story-img.jpg" alt="" class="img-fluid">
+                  </div>
 
                   <div class="story-img-shape">
                     <img src="./images/story-img-shape.svg" alt="">
                   </div>
                 </div>
               </div>
-              <div class="col-lg-6 pl-0">
+              <div class="col-xl-6 pl-lg-0">
                 <div class="section-head">
                   <h3 class="heading-sub">About Us</h3>
                   <h2 class="heading">Hear our <strong class="color-main">story</strong></h2>
@@ -357,7 +363,7 @@
               <p><strong>ABN</strong> 20 622 278 700</p>
             </div>
             <div class="col-lg-6">
-              <div class="max-width--150 mx-auto">
+              <div class="max-width--150 mx-lg-auto">
                 <div class="social-icons">
                   <span><a href="#"><i class="fab fa-facebook-f"></i></a></span>
                   <span><a href="#"><i class="fab fa-linkedin-in"></i></a></span>

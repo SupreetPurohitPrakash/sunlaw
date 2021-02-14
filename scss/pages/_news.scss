@@ -18,10 +18,20 @@
             max-width: 740px;
         }
     }
+
+    &-side {
+        @media (max-width: 1200px) {
+            margin-top: 60px;
+        }
+    }
 }
 
 .search-box {
     margin-bottom: 128px;
+
+    @media (max-width: 1200px) {
+        margin-bottom: 40px;
+    }
 
     &-form {
         position: relative;

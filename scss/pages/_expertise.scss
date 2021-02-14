@@ -54,6 +54,10 @@
         p {
             font-size: 22px;
             line-height: 30px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+            }
         }
     }
 
@@ -74,8 +78,18 @@
 
         &-img {
             width: 423px;
+            max-width: 100%;
             flex: 0 0 423px;
             height: 407px;
+
+            @media (max-width: 767px) {
+                font-size: 18px;
+                height: 350px;
+            }
+
+            @media (max-width: 567px) {
+                height: 280px;
+            }
         }
 
         &-title {
@@ -83,6 +97,11 @@
             letter-spacing: -16.5px;
             line-height: 90px;
             width: 100%;
+
+            @media (max-width: 567px) {
+                font-size: 80px;
+                letter-spacing: -12px;
+            }
         }
 
         &-cont {
@@ -117,6 +136,8 @@
 
                 @media (max-width: 991px) {
                     margin-bottom: 15px;
+                    font-size: 16px;
+                    line-height: 24px;
                 }
             }
         }

@@ -85,6 +85,11 @@
   font-weight: 300;
   line-height: 52px;
 
+  @media (max-width: 567px) {
+    font-size: 28px;
+    line-height: 40px;
+  }
+
   &-sub {
     font-family: $font-title;
     font-size: 20px;
@@ -113,9 +118,6 @@
     }
   }
 
-  @media (max-width: 991px) {
-    font-size: 36px;
-  }
 }
 
 .title-bar {
