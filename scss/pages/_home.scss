@@ -264,6 +264,7 @@
         }
 
         &-shape {
+            z-index: 2;
             position: absolute;
             left: -5.5%;
             bottom: -13%;
@@ -276,10 +277,21 @@
     }
 
     &-mask-img {
-        mask-image: url('../images/about-mask.png');
+        // mask-image: url('../images/about-mask.png');
         mask-size: 100% 100%;
         mask-position: center;
         mask-repeat: no-repeat;
+        overflow: hidden;
+
+        &::after {
+            content: "";
+            z-index: 1;
+            @include absoldefault;
+            background-image: url('../images/about-mask-outer.png');
+            background-size: 100% 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
 
         @media (min-width: 992px) {
             height: 689px;
