@@ -165,8 +165,13 @@
             transition: all .3s ease-out;
             letter-spacing: -30px;
 
-            @media (max-width: 1200px) {
+            @media (max-width: 1550px) {
                 font-size: 100px;
+                letter-spacing: -18px;
+            }
+
+            @media (max-width: 1200px) {
+                font-size: 85px;
                 letter-spacing: -18px;
             }
         }
