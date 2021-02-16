@@ -313,9 +313,9 @@ jQuery(document).ready(function ($) {
 
   function sliderVid() {
     var video = $('#heroVideo');
+    $('#heroVideo').trigger('play');
     setTimeout(function () {
-      video.removeClass('d-none');
-      $('#heroVideo').trigger('play');
+      // video.removeClass('d-none');
     }, 2000)
   }
 
