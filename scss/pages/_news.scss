@@ -20,9 +20,9 @@
     }
 
     &-side {
-        @media (max-width: 1200px) {
-            margin-top: 60px;
-        }
+        padding-top: 65px;
+
+        @media (max-width: 1200px) {}
     }
 }
 
