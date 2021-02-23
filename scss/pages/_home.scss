@@ -320,7 +320,7 @@
     }
 
     p {
-        font-size: 22px;
+        font-size: 18px;
         line-height: 35px;
         margin-bottom: 45px;
 
@@ -399,7 +399,7 @@
             }
 
             h3 {
-                font-size: 30px;
+                font-size: 24px;
                 font-weight: 500;
                 margin-bottom: 8px;
 
@@ -413,8 +413,8 @@
             }
 
             p {
-                font-size: 16px;
-                line-height: 20px;
+                font-size: 14px;
+                line-height: 24px;
 
                 @media (max-width: 767px) {
                     font-size: 14px;
@@ -438,6 +438,8 @@
             }
 
             .link-box {
+                font-size: 16px;
+
                 @media (max-width: 767px) {
                     font-size: 14px;
                     padding: 12px 18px;

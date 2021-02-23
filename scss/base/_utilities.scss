@@ -81,9 +81,9 @@
 .heading {
   position: relative;
   font-family: $font-title;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 300;
-  line-height: 52px;
+  line-height: 46px;
 
   @media (max-width: 567px) {
     font-size: 28px;
@@ -484,7 +484,7 @@
     text-align: center;
 
     a {
-      font-size: 20px;
+      font-size: 16px;
       font-weight: 500;
       text-decoration: underline;
 
