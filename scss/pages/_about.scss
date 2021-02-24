@@ -262,3 +262,40 @@
         }
     }
 }
+
+.community {
+    .section-head {
+        .heading {
+            margin-bottom: 20px;
+
+            @media (min-width: 992px) {
+                font-size: 40px;
+            }
+        }
+
+        p {
+            max-width: 540px;
+            font-size: 20px;
+            line-height: 32px;
+        }
+    }
+
+    .row {
+        align-items: center;
+        justify-content: center;
+    }
+
+    [class^="col-"] {
+        text-align: center;
+        margin-bottom: 15px;
+
+        @media (min-width: 992px) {
+            flex: 0 0 20%;
+            max-width: 20%;
+        }
+
+        img {
+            max-width: 90%;
+        }
+    }
+}
